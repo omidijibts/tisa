@@ -1,0 +1,119 @@
+body {
+    background-color: white;
+}
+* {
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+
+
+header {
+    background: linear-gradient(to bottom right,green,white,green);
+}
+header h2{
+    font-family: cursive;
+    color:lawngreen;
+    text-shadow: 3px 3px 1px black;
+    text-align: center;
+}
+header p{
+    font-family: cursive;
+    color:;
+    text-align: center;
+}
+header .flex-container{
+            display: flex;
+            background-color: green;margin: 0px 80px;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;height: 50px;
+        }
+header .flex-container div {
+    background-color: white;
+    width: auto;padding: 7px;margin-right: 3px;
+}
+nav ul{list-style-type: none;padding: 0px;}
+nav .flex-container{
+    display: flex;
+    background-color: black;padding: 10px;
+    flex-flow: row wrap;
+}
+nav a{
+    color: white;
+    padding: 10px;
+}
+.active {background-color: red}
+nav a:hover:not(.active){
+    background-color: gray;
+}
+
+.dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdownbtn{
+            background-color: green;color: white;
+            padding: 5px 20px;
+        }
+        .dropdown-content{
+            position: absolute;
+            display: none;
+            z-index: 1;
+            background-color: greenyellow;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+            width: ;
+        }
+        .dropdown:hover .dropdown-content a{
+            display: block;
+            color: red;
+            font-family: cursive;
+        }
+
+
+
+.col-3 {
+     background:linear-gradient(to bottom,red,orange,yellow,green,blue,indigo,violet);
+    overflow: auto;
+        }
+[class*="col-"] {
+    float: left;margin: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+table {
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: greenyellow;
+}
+tr:hover{
+    background-color: green;
+}
+th,td {
+    text-align: center;
+    padding: 2px;margin: 1px;
+}
+
+
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width:768px){
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
